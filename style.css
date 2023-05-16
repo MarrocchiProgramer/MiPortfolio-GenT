@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    display: inline-block !important;
+    text-decoration: none !important;
+}
+
+a:visited{
+    color: inherit !important;
+}
+
+li{
+    list-style-type: none;
+}
+:root{
+    --main-proyectos-color: #FF6D60;
+    --main-sobreMi-color: #F7D060;
+    --main-sobreMi-color2: #f6d470;
+
+    --main-contacto-color: #F3E99F;
+    --footer-color: #98D8AA;
+}
+
+
+body{
+    width: 100vw;
+    height: auto;
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+.navbar{
+    background-color: var(--main-proyectos-color);
+    height: 8rem;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link{
+    font-size: 1.5rem !important;
+    font-family: 'Skranji', cursive;
+    margin: 1rem;
+}
+
+.nav-link:hover{
+    transform: scale(1.05);
+}
+
+.container-proyectos{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.proyectos{
+    width: 100vw;
+    height: 40rem;
+}
+/* empieza S E C C I O N 1 */
+
+#seccion1-proyectos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 40rem;
+    margin-top: -2rem;
+    background-color: var(--main-sobreMi-color);
+}
+
+.proyecto-titulo{
+    font-family: 'Skranji', cursive;
+    font-size: 4rem;
+}
+
+.proyecto-imagen{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.bx-down-arrow-alt{
+    cursor: pointer;
+    font-size: 30px;
+    animation-name: flecha;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/* termina S E C C I O N 1 */
+
+
+/* empieza S E C C I O N 2 */
+#seccion2-proyectos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 45rem;
+    background-color: var(--main-sobreMi-color2);
+}
+
+.card{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.card-img{
+} 
+
+
+
+
+
+/* termina S E C C I O N 2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes flecha {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(10px);
+    }
+}
+
